@@ -58,7 +58,7 @@ export default IndexPage
 export const pageQuery = graphql`
   query ImageSectionQuery {
     sectionImage: imageSharp(id: { regex: "/background/" }) {
-      sizes(maxWidth: 1680, maxHeight: 800, duotone: { highlight: "#e59732", shadow: "#11295f" },) {
+      sizes(maxWidth: 1680, maxHeight: 800, duotone: { highlight: "#e59732", shadow: "#11295e" },) {
         ...GatsbyImageSharpSizes
       }
     }
