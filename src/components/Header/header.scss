@@ -1,0 +1,21 @@
+.header {
+  background-color: purple;
+  padding: 1em;
+  opacity: 0.8;
+  .header-name {
+    color: white;
+    font-size: 24px;
+  }
+  .header-links {
+    text-align: right;
+  }
+  .header-links a {
+    color: white;
+    text-decoration: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    &:not(.last) {
+      border-right: 1px solid white;
+    }
+  }
+}
