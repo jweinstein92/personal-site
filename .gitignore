@@ -6,3 +6,7 @@ yarn-error.log
 
 # Build directory
 /public
+
+# JetBrains products (Intellij, PyCharm, etc.)
+.idea
+*.iml

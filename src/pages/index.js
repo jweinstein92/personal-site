@@ -11,7 +11,7 @@ class IndexPage extends React.Component {
         <ImageSection sectionImage={this.props.data.sectionImage} />
         <div className="middle-section" data-flex data-layout="column" data-layout-align="center center">
           <span className="title-name">Josh Weinstein</span>
-          <span className="title-description">Software | Travel | Photography</span>
+          <span className="title-description">Software | Web | Travel</span>
         </div>
         <div className="menu-contsainer" data-layout="column" data-layout-align="end end">
           {/*<Menu />*/}
@@ -29,7 +29,7 @@ class IndexPage extends React.Component {
         <div className="section experience" data-layout="column">
           <div className="section-header" data-layout="column" data-layout-align="center center">
             <span className="title">Experience</span>
-            <span className="description"></span>
+            <span className="description">I have worked with corporations and led a startup</span>
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@ class IndexPage extends React.Component {
         <div className="section skills" data-layout="column">
           <div className="section-header" data-layout="column" data-layout-align="center center">
             <span className="title">Skills</span>
-            <span className="description"></span>
+            <span className="description">I have played with many technologies and love to learn more</span>
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@ class IndexPage extends React.Component {
         <div className="section travel" data-layout="column">
           <div className="section-header" data-layout="column" data-layout-align="center center">
             <span className="title">Travel</span>
-            <span className="description"></span>
+            <span className="description">I have explored parts of the world and am aching to continue</span>
           </div>
         </div>
       </div>
