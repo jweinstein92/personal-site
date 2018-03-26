@@ -4,6 +4,10 @@
 
   .title-section {
     color: white;
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+
     .title-name {
       font-size: 48px;
       margin: .5em .5em .25em .5em;
@@ -12,6 +16,32 @@
     .title-description {
       font-size: 18px;
       margin: .25em .5em .5em .5em;
+    }
+  }
+  .section-container {
+    min-height: 500px;
+    &.colored {
+      background-color: #FFC063;
+    }
+    .section {
+      width: 1000px;
+      max-width: 1000px;
+
+      .section-header {
+        min-height: 150px;
+        border-bottom: 1px solid #DADADA;
+
+        .title {
+          color: #11295f;
+          font-size: 48px;
+          margin-bottom: .5em;
+        }
+        .description {
+          color: #787878;
+          font-size: 24px;
+          text-align: center;
+        }
+      }
     }
   }
 }
