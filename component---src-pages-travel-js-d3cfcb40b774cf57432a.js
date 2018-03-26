@@ -1,0 +1,2 @@
+webpackJsonp([57411840573901],{205:function(e,t,u){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var n=u(2),a=l(n),r=function(){return a.default.createElement("div",null,a.default.createElement("h1",null,"Hi from the travel page"))};t.default=r,e.exports=t.default}});
+//# sourceMappingURL=component---src-pages-travel-js-d3cfcb40b774cf57432a.js.map

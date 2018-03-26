@@ -1,0 +1,66 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-ac697e8defb2109b9a4a.js",
+      "component---src-pages-index-js-ac697e8defb2109b9a4a.js.map"
+    ],
+    "component---src-pages-travel-js": [
+      "component---src-pages-travel-js-d3cfcb40b774cf57432a.js",
+      "component---src-pages-travel-js-d3cfcb40b774cf57432a.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "component---src-pages-contact-js": [
+      "component---src-pages-contact-js-95a09b7e24dbbbc6d2aa.js",
+      "component---src-pages-contact-js-95a09b7e24dbbbc6d2aa.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-44a8a1be69a841338f0b.js",
+      "component---src-layouts-index-js-44a8a1be69a841338f0b.js.map"
+    ],
+    "path---index": [
+      "path---index-2c5a3b15c5ede05a361a.js",
+      "path---index-2c5a3b15c5ede05a361a.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-d3c40e14ad5e90670837.js",
+      "commons-d3c40e14ad5e90670837.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---contact": [
+      "path---contact-a0e39f21c11f6a62c5ab.js",
+      "path---contact-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---portfolio": [
+      "path---portfolio-a0e39f21c11f6a62c5ab.js",
+      "path---portfolio-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---travel": [
+      "path---travel-a0e39f21c11f6a62c5ab.js",
+      "path---travel-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-f5e09745ce326b0f3722.js",
+      "build-js-styles.css",
+      "app-f5e09745ce326b0f3722.js.map",
+      "build-js-styles.css.map"
+    ],
+    "component---src-pages-portfolio-js": [
+      "component---src-pages-portfolio-js-85ec6768054c8198f22d.js",
+      "component---src-pages-portfolio-js-85ec6768054c8198f22d.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}
