@@ -24,17 +24,19 @@
       background-color: #f4efe1;
     }
     .section {
-      width: 1000px;
+      width: 90%;
       max-width: 1000px;
 
       .section-header {
         min-height: 150px;
         border-bottom: 1px solid #DADADA;
+        text-align: center;
 
         .title {
           color: #FF9800;
           font-size: 48px;
           margin-bottom: .5em;
+
         }
         .description {
           color: #787878;
