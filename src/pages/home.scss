@@ -4,12 +4,12 @@
 
   .title-section {
     color: white;
-    height: 100%;
-    min-height: 100%;
+    height: 100vh;
+    min-height: 100vh;
     position: relative;
 
     .title-name {
-      font-size: 48px;
+      font-size: 46px;
       margin: .5em .5em .25em .5em;
     }
 
@@ -17,6 +17,65 @@
       font-size: 18px;
       margin: .25em .5em .5em .5em;
     }
+
+    .dropdown-menu {
+      ul {
+        list-style: none;
+        margin: 0 1.5em 0 0;
+        li {
+          margin: 0;
+
+          a {
+            text-decoration: none;
+            color: white;
+            font-size: 48px;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            width: 110px;
+            height: 80px;
+            background-color: #FF9800;
+
+          }
+        }
+      }
+    }
+  }
+  .sections {
+    //position: relative;
+
+    .menu-container {
+      position: -webkit-sticky;
+      position: sticky;
+      margin: 0 1.5em 0 0;
+      top: 1.5em;
+    }
+    .menu-container ul {
+      list-style: none;
+
+      li {
+        margin: 0;
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+          width: 110px;
+          height: 80px;
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          background-color: black;
+        }
+      }
+      li.is-current a {
+        background-color: #FF9800;
+      }
+    }
+
+  }
+  #profile {
+    margin-top: -346px;
   }
   .section-container {
     min-height: 500px;
@@ -33,8 +92,9 @@
         text-align: center;
 
         .title {
+          text-align: center;
           color: #FF9800;
-          font-size: 48px;
+          font-size: 46px;
           margin-bottom: .5em;
 
         }
