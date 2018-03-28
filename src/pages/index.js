@@ -7,6 +7,17 @@ import './home.scss'
 import profilePhoto from '../img/profile.png'
 
 class IndexPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      menuOpen: false
+    };
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+  toggleMenu() {
+    console.log(this.state);
+    this.setState({menuOpen: !this.state.menuOpen});
+  }
   render() {
     return (
     <div className="home-page" data-flex data-layout="column">
@@ -18,13 +29,16 @@ class IndexPage extends React.Component {
         </div>
         <div className="dropdown-menu" data-layout="column" data-layout-align="end end">
           <Scrollspy items={ ['profile'] }>
-            <li><a href="#profile"><i className="fa fa-angle-down"></i></a></li>
+            <li><a href="#profile"><i className="fa fa-angle-down bounce" /></a></li>
           </Scrollspy>
         </div>
       </div>
       <div className="sections" data-layout="column">
         <div className="menu-container" data-layout="column" data-layout-align="end end">
-          <Scrollspy items={ ['profile', 'experience', 'skills', 'travel'] } currentClassName="is-current" offset="1">
+          <div className="menu-bars" data-layout="column" data-layout-align="center end">
+            <button onClick={this.toggleMenu}><i className="fa fa-bars" /></button>
+          </div>
+          <Scrollspy items={ ['profile', 'experience', 'skills', 'travel'] } currentClassName="is-current" offset="1" className={this.state.menuOpen ? 'open' : 'closed'}>
             <li><a href="#profile">Profile</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
