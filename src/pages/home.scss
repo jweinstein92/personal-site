@@ -76,6 +76,48 @@
   }
   #profile {
     margin-top: -346px;
+
+    .profile-details {
+      margin: 1em;
+      width: 75%;
+      .about {
+        .about-me {
+          color: #FF9800;
+          font-size: 36px;
+          margin-bottom: .5em;
+        }
+        .description {
+          font-size: 18px;
+          color: #787878;
+        }
+      }
+      .profile-photo img {
+        margin: 0em 2em;
+        max-width: 250px;
+      }
+      .contact {
+        .details {
+          color: #FF9800;
+          font-size: 36px;
+          margin-bottom: .5em;
+        }
+        .label {
+          font-weight: bold;
+          font-size: 18px;
+          color: black;
+        }
+        .answer {
+          font-size: 18px;
+          color: #787878;
+          z-index: 100;
+
+          i {
+            font-size: 28px;
+            color: #FF9800;
+          }
+        }
+      }
+    }
   }
   .section-container {
     min-height: 500px;
@@ -83,8 +125,8 @@
       background-color: #f4efe1;
     }
     .section {
-      width: 90%;
-      max-width: 1000px;
+      width: 80%;
+      max-width: 80%;
 
       .section-header {
         min-height: 150px;

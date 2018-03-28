@@ -1,7 +1,10 @@
 import React from 'react'
-import './home.scss'
+import Img from 'react-image'
 import ImageSection from '../components/ImageSection'
 import Scrollspy from 'react-scrollspy'
+
+import './home.scss'
+import profilePhoto from '../img/profile.png'
 
 class IndexPage extends React.Component {
   render() {
@@ -29,34 +32,67 @@ class IndexPage extends React.Component {
           </Scrollspy>
         </div>
         <div id="profile" className="section-container" data-layout="column" data-layout-align="start center">
-          <div className="section profile" data-layout="column">
+          <div className="section profile" data-flex data-layout="column">
             <div className="section-header" data-layout="column" data-layout-align="center center">
               <span className="title">Profile</span>
               <span className="description">I am a software engineer with a passion for UI/UX</span>
             </div>
+            <div className="profile-details-container" data-flex data-layout="column" data-layout-align="center center">
+              <div className="profile-details" data-flex data-layout-gt-sm="row" data-layout-sm="column" data-layout-align="center center">
+                <div className="about" data-flex data-layout="column">
+                  <span className="about-me">About Me</span>
+                  <div className="description">
+                    I am a web developer with knowledge and experience in both front-end and back-end technologies.
+                  </div>
+                </div>
+                <div className="profile-photo" data-flex>
+                  <Img src={profilePhoto} />
+                </div>
+                <div className="contact" data-flex data-layout="column">
+                  <span className="details">Details</span>
+                  <span className="label">Name:</span>
+                  <span className="answer">Josh Weinstein</span>
+                  <span className="label">Age:</span>
+                  <span className="answer">25</span>
+                  <span className="label">Location:</span>
+                  <span className="answer">Philadelphia, PA</span>
+                  <span className="label">Profiles:</span>
+                  <span className="answer"><a href="https://www.linkedin.com/in/joshweinstein92/" target="_blank"><i className="fa fa-linkedin-square" /></a> <a href="https://github.com/jweinstein92" target="_blank"><i className="fa fa-github-square" /></a></span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div id="experience" className="section-container colored" data-layout="column" data-layout-align="start center">
-          <div className="section experience" data-layout="column">
+          <div className="section experience" data-flex data-layout="column">
             <div className="section-header" data-layout="column" data-layout-align="center center">
               <span className="title">Experience</span>
               <span className="description">I have worked with corporations and led a startup</span>
             </div>
+            <div class="experience-details" data-flex data-layout="column">
+
+            </div>
           </div>
         </div>
         <div id="skills" className="section-container" data-layout="column" data-layout-align="start center">
-          <div className="section skills" data-layout="column">
+          <div className="section skills" data-flex data-layout="column">
             <div className="section-header" data-layout="column" data-layout-align="center center">
               <span className="title">Skills</span>
               <span className="description">I have played with many technologies and love to learn more</span>
             </div>
+            <div class="skills-details" data-flex data-layout="column">
+
+            </div>
           </div>
         </div>
         <div id="travel" className="section-container colored" data-layout="column" data-layout-align="start center">
-          <div className="section travel" data-layout="column">
+          <div className="section travel" data-flex data-layout="column">
             <div className="section-header" data-layout="column" data-layout-align="center center">
               <span className="title">Travel</span>
               <span className="description">I have explored parts of the world and am aching to continue</span>
+            </div>
+            <div class="travel-details" data-flex data-layout="column">
+
             </div>
           </div>
         </div>
