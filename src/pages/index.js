@@ -52,11 +52,13 @@ class IndexPage extends React.Component {
               <span className="description">I am a software engineer with a passion for UI/UX</span>
             </div>
             <div className="profile-details-container" data-flex data-layout="column" data-layout-align="center center">
-              <div className="profile-details" data-flex data-layout-gt-sm="row" data-layout-sm="column" data-layout-align="center center">
+              <div className="profile-details" data-flex data-layout-gt-sm="row" data-layout-sm="column" data-layout-align="center start">
                 <div className="about" data-flex data-layout="column">
-                  <span className="about-me">About Me</span>
+                  <span className="about-me">Hey there!</span>
                   <div className="description">
-                    I am a web developer with knowledge and experience in both front-end and back-end technologies.
+                    I am a software engineer based out of Philadelphia. Professionally, I have worked on some different
+                    web applications as well as built a revenue generating company with two friends. <br/><br/>
+                    I am passionate about user interfaces, learning new technologies, travel, photography, food, and beer.
                   </div>
                 </div>
                 <div className="profile-photo" data-flex>
@@ -71,7 +73,7 @@ class IndexPage extends React.Component {
                   <span className="label">Location:</span>
                   <span className="answer">Philadelphia, PA</span>
                   <span className="label">Profiles:</span>
-                  <span className="answer"><a href="https://www.linkedin.com/in/joshweinstein92/" target="_blank"><i className="fa fa-linkedin-square" /></a> <a href="https://github.com/jweinstein92" target="_blank"><i className="fa fa-github-square" /></a></span>
+                  <span className="answer"><a href="https://www.linkedin.com/in/joshweinstein92/" target="_blank" title="LinkedIn"><i className="fa fa-linkedin-square" /></a> <a href="https://github.com/jweinstein92" target="_blank" title="Github"><i className="fa fa-github-square" /></a></span>
                 </div>
               </div>
             </div>
