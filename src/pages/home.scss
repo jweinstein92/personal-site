@@ -101,26 +101,55 @@
           background-color: black;
         }
         a:hover {
-          color: #787878;
+          color: #DADADA;
         }
       }
       li.is-current a {
         background-color: #FF9800;
       }
     }
+  }
+  .section-container {
+    min-height: 500px;
+    &.colored {
+      background-color: #f4efe1;
+      outline: 1px solid #DADADA;
+    }
+    .section {
+      width: 60%;
+      max-width: 60%;
 
+      .section-header {
+        min-height: 150px;
+        border-bottom: 1px solid #DADADA;
+        text-align: center;
+
+        .title {
+          text-align: center;
+          color: #FF9800;
+          font-size: 46px;
+          margin-bottom: .5em;
+
+        }
+        .description {
+          color: #787878;
+          font-size: 24px;
+          text-align: center;
+        }
+      }
+    }
   }
   #profile {
     margin-top: -346px;
 
     .profile-details {
-      margin: 1em;
-      width: 75%;
+      margin: 1em 0;
+      //width: 75%;
       .about {
         .about-me {
           color: #FF9800;
-          font-size: 36px;
-          margin-bottom: .5em;
+          font-size: 30px;
+          margin-bottom: 1em;
         }
         .description {
           font-size: 18px;
@@ -134,8 +163,8 @@
       .contact {
         .details {
           color: #FF9800;
-          font-size: 36px;
-          margin-bottom: .5em;
+          font-size: 30px;
+          margin-bottom: 1em;
         }
         .label {
           font-weight: bold;
@@ -155,31 +184,48 @@
       }
     }
   }
-  .section-container {
-    min-height: 500px;
-    &.colored {
-      background-color: #f4efe1;
-    }
-    .section {
-      width: 80%;
-      max-width: 80%;
+  #experience {
+    .experience-details {
+      margin: 1em 0;
 
-      .section-header {
-        min-height: 150px;
+      .professional {
         border-bottom: 1px solid #DADADA;
-        text-align: center;
-
+        margin-bottom: 2em;
+      }
+      .professional, .education {
         .title {
-          text-align: center;
           color: #FF9800;
-          font-size: 46px;
-          margin-bottom: .5em;
-
+          font-size: 30px;
+          margin-bottom: 1em;
         }
-        .description {
-          color: #787878;
-          font-size: 24px;
-          text-align: center;
+        .job, .school {
+          margin-bottom: 2em;
+          .general {
+            margin-bottom: .5em;
+            .company {
+              font-weight: bold;
+            }
+            .date {
+              font-size: 16px;
+            }
+          }
+          .details {
+            .position {
+              font-weight: bold;
+            }
+            .description {
+              font-size: 16px;
+            }
+            .link {
+              z-index: 100;
+              font-size: 16px;
+              text-decoration: none;
+              color: #FF9800;
+              i {
+                margin-right: .5em;
+              }
+            }
+          }
         }
       }
     }
