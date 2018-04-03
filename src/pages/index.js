@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from 'react-image'
 import ImageSection from '../components/ImageSection'
+import MyMapComponent from '../components/Map'
 import Scrollspy from 'react-scrollspy'
 
 import './home.scss'
@@ -9,20 +10,24 @@ import profilePhoto from '../img/profile.png'
 class IndexPage extends React.Component {
   constructor(props) {
     super(props);
+    let markers = [];
+    this.props.data.allPlacesJson.edges.map((node, key) => {
+      markers.push(node.node);
+    });
     this.state = {
-      menuOpen: false
+      menuOpen: false,
+      markers: markers
     };
     this.toggleMenu = this.toggleMenu.bind(this);
   }
   toggleMenu() {
-    console.log(this.state);
     this.setState({menuOpen: !this.state.menuOpen});
   }
   render() {
     return (
     <div className="home-page" data-flex data-layout="column">
       <div className="title-section" data-layout="column">
-        <ImageSection sectionImage={this.props.data.sectionImage} />
+        <ImageSection sectionImage={this.props.data.icelandPhoto} />
         <div className="middle-section" data-flex data-layout="column" data-layout-align="center center">
           <span className="title-name">Josh Weinstein</span>
           <span className="title-description">Software | Web | Travel</span>
@@ -178,7 +183,9 @@ class IndexPage extends React.Component {
               <span className="description">I have explored parts of the world and am aching to continue</span>
             </div>
             <div class="travel-details" data-flex data-layout="column">
-
+              IDEA: Add google maps with pinpoints of places i've been. On click of the pinpoints, take them to a page
+              of pictures from there. pinpoint should be orange if there are pictures, otherwise grey.
+              <MyMapComponent isMarkerShown markers={this.state.markers}/>
             </div>
           </div>
         </div>
@@ -190,10 +197,27 @@ class IndexPage extends React.Component {
 export default IndexPage
 
 export const pageQuery = graphql`
-  query ImageSectionQuery {
+  query ImageQuery {
     sectionImage: imageSharp(id: { regex: "/background/" }) {
       sizes(maxWidth: 1680, maxHeight: 800, duotone: { highlight: "#e59732", shadow: "#11295e" },) {
         ...GatsbyImageSharpSizes
+      }
+    }
+    icelandPhoto: imageSharp(id: { regex: "/iceland/" }) {
+      sizes(maxWidth: 800,) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    allPlacesJson {
+      edges {
+        node {
+          id
+          name
+          lat
+          lng
+          has_pictures
+          photo_regex
+        }
       }
     }
   }

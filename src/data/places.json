@@ -1,0 +1,144 @@
+[
+  {
+    "name": "Denmark",
+    "lat": 55.676097,
+    "lng": 12.568337,
+    "has_pictures": true,
+    "photo_regex": "denmark"
+  },
+  {
+    "name": "Sweden",
+    "lat": 55.604981,
+    "lng": 13.003822,
+    "has_pictures": true,
+    "photo_regex": "sweden"
+  },
+  {
+    "name": "Finland",
+    "lat": 60.169856,
+    "lng": 24.938379,
+    "has_pictures": true,
+    "photo_regex": "finland"
+  },
+  {
+    "name": "Bergen, Norway",
+    "lat": 60.391263,
+    "lng": 5.322054,
+    "has_pictures": true,
+    "photo_regex": "norway"
+  },
+  {
+    "name": "Iceland",
+    "lat": 64.126521,
+    "lng": -21.817439,
+    "has_pictures": true,
+    "photo_regex": "iceland"
+  },
+  {
+    "name": "Germany",
+    "lat": 52.520007,
+    "lng": 13.404954,
+    "has_pictures": true,
+    "photo_regex": "germany"
+  },
+  {
+    "name": "Vienna, Austria",
+    "lat": 48.208174,
+    "lng": 16.373819,
+    "has_pictures": true,
+    "photo_regex": "austria"
+  },
+  {
+    "name": "Budapest, Hungry",
+    "lat": 47.497912,
+    "lng": 19.040235,
+    "has_pictures": true,
+    "photo_regex": "hungry"
+  },
+  {
+    "name": "Prague, Czech Republic",
+    "lat": 50.075538,
+    "lng": 14.437800,
+    "has_pictures": true,
+    "photo_regex": "czech"
+  },
+  {
+    "name": "Greece",
+    "lat": 37.983810,
+    "lng": 23.727539,
+    "has_pictures": true,
+    "photo_regex": "greece"
+  },
+  {
+    "name": "Tallinn, Estonia",
+    "lat": 59.436961,
+    "lng": 24.753575,
+    "has_pictures": true,
+    "photo_regex": "estonia"
+  },
+  {
+    "name": "Slovenia",
+    "lat": 46.056947,
+    "lng": 14.505751,
+    "has_pictures": true,
+    "photo_regex": "slovenia"
+  },
+  {
+    "name": "Italy",
+    "lat": 41.902783,
+    "lng": 12.496366,
+    "has_pictures": true,
+    "photo_regex": "italy"
+  },
+  {
+    "name": "London, England",
+    "lat": 51.507351,
+    "lng": -0.127758,
+    "has_pictures": true,
+    "photo_regex": "london"
+  },
+  {
+    "name": "Colorado",
+    "lat": 38.833882,
+    "lng": -104.821363,
+    "has_pictures": true,
+    "photo_regex": "colorado"
+  },
+  {
+    "name": "Philadelphia",
+    "lat": 39.952584,
+    "lng": -75.165222,
+    "has_pictures": true,
+    "photo_regex": "philadelphia"
+  },
+  {
+    "name": "Puerto Rico",
+    "lat": 18.126285,
+    "lng": -65.440098,
+    "has_pictures": false
+  },
+  {
+    "name": "Bahamas",
+    "lat": 24.929269,
+    "lng": -76.189348,
+    "has_pictures": false
+  },
+  {
+    "name": "Cayman Islands",
+    "lat": 19.322170,
+    "lng": -81.240869,
+    "has_pictures": false
+  },
+  {
+    "name": "Turks and Caicos Islands",
+    "lat": 21.694025,
+    "lng": -71.797928,
+    "has_pictures": false
+  },
+  {
+    "name": "Montreal, Canada",
+    "lat": 45.501689,
+    "lng": -73.567256,
+    "has_pictures": false
+  }
+]
