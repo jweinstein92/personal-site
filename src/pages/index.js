@@ -6,6 +6,8 @@ import Scrollspy from 'react-scrollspy'
 
 import './home.scss'
 import profilePhoto from '../img/profile.png'
+import beerPhoto from '../img/beer.jpg'
+import fftPhoto from '../img/fft.jpg'
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -78,7 +80,7 @@ class IndexPage extends React.Component {
                   <span className="label">Location:</span>
                   <span className="answer">Philadelphia, PA</span>
                   <span className="label">Profiles:</span>
-                  <span className="answer"><a href="https://www.linkedin.com/in/joshweinstein92/" target="_blank" title="LinkedIn"><i className="fa fa-linkedin-square" /></a> <a href="https://github.com/jweinstein92" target="_blank" title="Github"><i className="fa fa-github-square" /></a></span>
+                  <span className="answer"><a href="https://github.com/jweinstein92" target="_blank" title="Github"><i className="fa fa-github-square" /></a> <a href="https://www.linkedin.com/in/joshweinstein92/" target="_blank" title="LinkedIn"><i className="fa fa-linkedin-square" /></a></span>
                 </div>
               </div>
             </div>
@@ -174,8 +176,39 @@ class IndexPage extends React.Component {
               <span className="title">Projects</span>
               <span className="description">I have played with many technologies and love to learn more</span>
             </div>
-            <div class="project-details" data-flex data-layout="column">
-
+            <div className="project-details" data-flex data-layout-gt-sm="row" data-layout-sm="column">
+              <div className="project" data-layout="column" data-layout-align="center center">
+                <div className="image-container">
+                  <Img src={beerPhoto} />
+                  <div className="overlay" data-layout="column" data-layout-align="start start">
+                    <span className="title">Predictive Beer Analytics</span>
+                    <div className="description" data-flex>
+                      A project that aims to gather, process, and present beer data to determine where in the world
+                      different beers will be rated highest. <br /> <br />
+                      Uses a combination of data mining, natural language processing, image color analysis, and web
+                      development (all in Python) to come to the conclusions presented in the report.
+                    </div>
+                    <a href="https://github.com/jweinstein92/Predictive_Beer_Analytics/" target="_blank" title="PBA" className="link"><i className="fa fa-link" />Github</a>
+                    <a href="https://github.com/jweinstein92/Predictive_Beer_Analytics/blob/master/docs/PBA_Report.pdf" target="_blank" title="PBA Report" className="link"><i className="fa fa-link" />Report</a>
+                  </div>
+                </div>
+              </div>
+              <div className="project" data-layout="column" data-layout-align="center center">
+                <div className="image-container">
+                  <Img src={fftPhoto} />
+                  <div className="overlay" data-layout="column" data-layout-align="start start">
+                    <span className="title">Audio Removal</span>
+                    <div className="description" data-flex>
+                      A project that aims to remove chunks of an audio file with two provided WAV files, one for the
+                      original signal and one for the sample. <br /> <br />
+                      Using C and the Fast Fourier Transform, we were able to determine the instances of a provided
+                      sample audio file in another provided audio file and remove the sample from the original. This can
+                      be used to remove the opening theme song of a podcast for example.
+                    </div>
+                    <a href="https://github.com/jweinstein92/Audio-Removal-Using-FFT-" target="_blank" title="Audio Removal" className="link"><i className="fa fa-link" />Github</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
