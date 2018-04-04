@@ -45,7 +45,7 @@ const MyMapComponent = compose(
             customInfo={marker}
             position={{ lat: marker.lat, lng: marker.lng }}
             title={marker.name}
-            icon={(marker.has_pictures) ? "http://maps.google.com/mapfiles/ms/micons/orange-dot.png" : "http://maps.google.com/mapfiles/ms/micons/orange.png"}
+            icon={(marker.has_pictures) ? "https://maps.google.com/mapfiles/ms/micons/orange-dot.png" : "https://maps.google.com/mapfiles/ms/micons/orange.png"}
             onClick={(marker.has_pictures) ? props.onMarkerClick.bind(this, marker) : null}
           >
           </Marker>
