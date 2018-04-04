@@ -112,6 +112,8 @@
   }
   .section-container {
     min-height: 500px;
+    // fix stupid scrollspy issue of not highlighting correctly
+    margin-top: 1em;
     &.colored {
       background-color: #f4efe1;
       outline: 1px solid #DADADA;
