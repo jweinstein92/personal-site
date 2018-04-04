@@ -7,6 +7,7 @@
     height: 100vh;
     min-height: 100vh;
     position: relative;
+    padding-top: 63px;
 
     .title-name {
       font-size: 46px;
@@ -228,6 +229,22 @@
           }
         }
       }
+    }
+  }
+
+  #travel {
+    .travel-instructions {
+      margin-top: 1em;
+      font-size: 18px;
+      color: #787878;
+      z-index: 100;
+      a {
+        text-decoration: none;
+        color: #FF9800;
+      }
+    }
+    .map-container {
+      margin: 2em 0;
     }
   }
 

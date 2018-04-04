@@ -183,9 +183,10 @@ class IndexPage extends React.Component {
               <span className="description">I have explored parts of the world and am aching to continue</span>
             </div>
             <div class="travel-details" data-flex data-layout="column">
-              IDEA: Add google maps with pinpoints of places i've been. On click of the pinpoints, take them to a page
-              of pictures from there. pinpoint should be orange if there are pictures, otherwise grey.
-              <MyMapComponent isMarkerShown markers={this.state.markers}/>
+              <span className="travel-instructions">Look where I've been! Click on pins with dots to see some of the pictures I've taken or visit the <a href="/photos">photos page</a> to see the different places.</span>
+              <div className="map-container">
+                <MyMapComponent isMarkerShown markers={this.state.markers}/>
+              </div>
             </div>
           </div>
         </div>
