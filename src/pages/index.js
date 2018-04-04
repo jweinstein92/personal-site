@@ -108,22 +108,22 @@ class IndexPage extends React.Component {
                       database modeling, performance analysis, feature design, translating requirements specifications
                       into technical specifications, and managing a team of part time developers.
                     </div>
-                    <a href="https://booksmart.it" target="_blank" title="Booksmart Touring" className="link"><i className="fa fa-link" />https://booksmart.it</a>
+                    <a href="https://booksmart.it" target="_blank" title="Booksmart Touring" className="link"><i className="fa fa-link" />Booksmart Touring</a>
                   </div>
                 </div>
                 <div className="job" data-layout-gt-sm="row" data-layout-sm="column">
                   <div className="general" data-flex="33" data-layout="column">
-                    <span className="company">Oracle Primavera</span>
+                    <span className="company">Oracle</span>
                     <span className="date">April to August, 2014, April to September 2015</span>
                   </div>
                   <div className="details" data-flex="66" data-layout="column">
                     <span className="position">Applications Engineer</span>
                     <div className="description">
-                      While working for Oracle Primavera, a subsidiary of Oracle, I worked
-                      with various technologies ranging from JavaScript, Git, JQuery, HTML, CSS, Handlebars, and an
-                      internal Javascript component library. I was tasked with developing new UI features to enhance
-                      user experience on their project managment suite.
+                      While working for Oracle I worked with various technologies ranging from JavaScript, Git, JQuery,
+                      HTML, CSS, Handlebars, and an internal Javascript component library. I was tasked with developing
+                      new UI features to enhance user experience on their project managment suite.
                     </div>
+                    <a href="https://www.oracle.com/applications/primavera/products/project-portfolio-management/index.html" target="_blank" title="Oracle Primavera" className="link"><i className="fa fa-link" />Oracle Primavera P6</a>
                   </div>
                 </div>
                 <div className="job" data-layout-gt-sm="row" data-layout-sm="column">
@@ -139,6 +139,8 @@ class IndexPage extends React.Component {
                       quick page creation tool, automatic poster image creation using ffmpeg, and embedded videos using
                       &lt;iframe&gt;. I also upgraded their time tracking web application to be more user friendly.
                     </div>
+                    <a href="https://ias.edu" target="_blank" title="Institute for Advanced Study" className="link"><i className="fa fa-link" />Institute for Advanced Study</a>
+                    <a href="https://video.ias.edu" target="_blank" title="Institute for Advanced Study Video" className="link"><i className="fa fa-link" />Institute for Advanced Study Video</a>
                   </div>
                 </div>
               </div>
@@ -159,6 +161,7 @@ class IndexPage extends React.Component {
                       water filtration devices in the small village of Miramar in El Salvador. As president, I was in
                       charge of meetings, managing the various teams we had, and talking with the university and advisors.
                     </div>
+                    <a href="https://drexel.edu" target="_blank" title="Drexel University" className="link"><i className="fa fa-link" />Drexel University</a>
                   </div>
                 </div>
               </div>
