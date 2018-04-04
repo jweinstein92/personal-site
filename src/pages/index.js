@@ -27,7 +27,7 @@ class IndexPage extends React.Component {
     return (
     <div className="home-page" data-flex data-layout="column">
       <div className="title-section" data-layout="column">
-        <ImageSection sectionImage={this.props.data.icelandPhoto} />
+        <ImageSection sectionImage={this.props.data.sectionImage} />
         <div className="middle-section" data-flex data-layout="column" data-layout-align="center center">
           <span className="title-name">Josh Weinstein</span>
           <span className="title-description">Software | Web | Travel</span>
