@@ -1,0 +1,16 @@
+@import "../layouts/_colors";
+
+.photos-page {
+  background-color: $off-background;
+  height: 100vh;
+  min-height: 100vh;
+  .top {
+    padding-top: 63px;
+    margin-top: 1em;
+    .place {
+      font-size: 46px;
+      color: $grey-text;
+      font-weight: bold;
+    }
+  }
+}

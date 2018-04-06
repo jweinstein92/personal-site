@@ -1,3 +1,5 @@
+@import '../../layouts/_colors';
+
 .header {
   position: absolute;
   top: 0;
@@ -5,7 +7,7 @@
   width: 100%;
   background-color: transparent;
   padding: 1em;
-  border-bottom: 1px solid #DADADA;
+  border-bottom: 1px solid $grey-border;
   z-index: 101;
 
   .header-name {

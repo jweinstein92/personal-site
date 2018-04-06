@@ -240,11 +240,6 @@ export const pageQuery = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    icelandPhoto: imageSharp(id: { regex: "/iceland/" }) {
-      sizes(maxWidth: 800,) {
-        ...GatsbyImageSharpSizes
-      }
-    }
     allPlacesJson {
       edges {
         node {
