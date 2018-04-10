@@ -1,16 +1,60 @@
 @import "../layouts/_colors";
+@import "../../node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 
 .photos-page {
   background-color: $off-background;
-  height: 100vh;
+  height: 100%;
   min-height: 100vh;
   .top {
     padding-top: 63px;
-    margin-top: 1em;
+    margin: 1em 0;
+    text-align: center;
     .place {
       font-size: 46px;
       color: $grey-text;
       font-weight: bold;
+      margin-bottom: .5em;
+    }
+    .num-photos {
+      font-size: 30px;
+      color: $grey-text;
+    }
+  }
+
+  .photos-container {
+    max-width: 1000px;
+    width: 80%;
+    height: 100%;
+    .image-gallery  {
+      img {
+        margin: 0;
+      }
+      button {
+        opacity: 0;
+        transition: opacity .55s ease-in-out;
+        -moz-transition: opacity .55s ease-in-out;
+        -webkit-transition: opacity .55s ease-in-out;
+      }
+
+      .image-gallery-content:hover button {
+        opacity: 1;
+        transition: opacity .55s ease-in-out;
+        -moz-transition: opacity .55s ease-in-out;
+        -webkit-transition: opacity .55s ease-in-out;
+      }
+
+      .image-gallery-left-nav:hover::before, .image-gallery-right-nav:hover::before {
+        color: $orange;
+      }
+
+      .image-gallery-thumbnail.active {
+        border-color: $orange;
+      }
+
+      .image-gallery-slides{
+        //border: 15px solid #3e2b14;
+        //padding: 10px;
+      }
     }
   }
 }
