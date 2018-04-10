@@ -1,0 +1,97 @@
+@import "../layouts/_colors";
+
+.content-container {
+  position: relative;
+  margin-top: 62px;
+  .photos-container {
+    width: 100%;
+  }
+  .country-filter {
+    margin: 0 1.5em;
+    min-width: 110px;
+
+    .menu-bars {
+      width: 100%;
+      height: 50px;
+      background-color: black;
+      button {
+        color: $grey-text;
+        font-size: 24px;
+        background-color: transparent;
+        border: 1px solid $grey-text;
+        outline: none;
+        margin-right: 1.1em;
+        i {
+          display:inline-block;
+          vertical-align:middle;
+        }
+      }
+      display: none;
+    }
+
+    .menu-bars button:hover {
+      background-color: $grey-text;
+      color: black;
+      border-color: $grey-text;
+    }
+  }
+  .country-filter ul {
+    list-style: none;
+    margin: 0;
+
+    li {
+      margin: 0;
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        width: 110px;
+        height: 80px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        background-color: black;
+        text-transform: capitalize;
+      }
+      a:hover {
+        color: $grey-border;
+      }
+    }
+    li.is-current a {
+      background-color: $orange;
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+  .content-container .photos-container {
+    margin-top: 60px;
+  }
+  .content-container .country-filter {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 101;
+
+    .menu-bars {
+      display: inherit;
+    }
+
+    ul {
+      margin: 0;
+      width: 100%;
+
+      li a {
+        display: block;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+      }
+    }
+    ul.closed {
+      visibility: hidden;
+    }
+  }
+}
