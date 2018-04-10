@@ -30,7 +30,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         result.data.allPlacesJson.edges.forEach(({ node }) => {
           const path = 'photos/' + node.photo_regex;
           if (node.has_pictures) {
-            const regex = new RegExp(node.photo_regex, "g");
+            const regex = new RegExp("/img/photos/" + node.photo_regex, "g");
             createPage({
               path,
               component: photoPageTemplate,

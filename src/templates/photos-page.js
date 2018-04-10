@@ -64,7 +64,7 @@ class PhotosPage extends React.Component {
       <div className="photos-page" data-flex data-layout="column">
         <div className="top" data-layout="column">
           <span className="place">{pageData.name}</span>
-          <span className="num-photos">{photos.length} Photos</span>
+          {/*<span className="num-photos">{photos.length} Photos</span>*/}
         </div>
         {/*<div className="photos-container" data-layout="column">*/}
           {/*{rows}*/}
