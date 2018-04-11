@@ -219,10 +219,11 @@ class IndexPage extends React.Component {
               <span className="description">I have explored parts of the world and am aching to continue</span>
             </div>
             <div class="travel-details" data-flex data-layout="column">
-              <span className="travel-instructions">Look where I've been! Click on pins with dots to see some of the pictures I've taken or visit the <a href="/photos">photos page</a> to see the different places.</span>
-              <div className="map-container">
+              <span className="travel-instructions" data-hide-xs>Look where I've been! Click on pins with dots to see some of the pictures I've taken or visit the <a href="/photos">photos page</a> to see them all!</span>
+              <div className="map-container" data-hide-xs>
                 <MyMapComponent isMarkerShown markers={this.state.markers}/>
               </div>
+              <span className="travel-instructions" data-hide-gt-xs>I've been to many places! Visit the <a href="/photos">photos page</a> to see photos from the countries I've been to.</span>
             </div>
           </div>
         </div>

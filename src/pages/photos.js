@@ -55,13 +55,8 @@ class Photos extends React.Component {
   render() {
     return (
       <div className="photos-page" data-flex data-layout="column">
-        <div className="content-container" data-layout-gt-md="row" data-layout-md="column" data-layout-align-gt-md="center start" data-layout-align-md="center center">
-          <div data-layout="column" data-flex-order-gt-md="1" data-flex-order="2">
-            <div className="photos-container">
-              <ImageGallery ref={i => this._imageGallery = i} items={this.state.photos} slideInterval={5000} onSlide={this.changedImage} />
-            </div>
-          </div>
-          <div className="country-filter" data-layout="column" data-flex-order-gt-md="2" data-flex-order="1">
+        <div className="content-container" data-layout-gt-md="row" data-layout-md="column" data-layout-align-md="center center">
+          <div className="country-filter" data-layout="column">
             <div className="menu-bars" data-layout="column" data-layout-align="center end">
               <button onClick={this.toggleMenu}><i className="fa fa-bars" /></button>
             </div>
@@ -72,6 +67,11 @@ class Photos extends React.Component {
                 )
               })}
             </ul>
+          </div>
+          <div data-layout="column">
+            <div className="photos-container">
+              <ImageGallery ref={i => this._imageGallery = i} items={this.state.photos} slideInterval={5000} onSlide={this.changedImage} />
+            </div>
           </div>
         </div>
       </div>
