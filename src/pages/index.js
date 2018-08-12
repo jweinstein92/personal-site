@@ -97,6 +97,22 @@ class IndexPage extends React.Component {
                 <span className="title">Professional</span>
                 <div className="job" data-layout-gt-sm="row" data-layout-sm="column">
                   <div className="general" data-flex="33" data-layout="column">
+                    <span className="company">Radial Inc.</span>
+                    <span className="date">April 2018 - Present</span>
+                  </div>
+                  <div className="details" data-flex="66" data-layout="column">
+                    <span className="position">Senior UI Developer</span>
+                    <div className="description">
+                      I am the sole UI developer within the tax and complience team. While working with Radial as a
+                      contractor, I mainly use Javascript, HTML, and CSS to create and improve user interfaces for the
+                      monitoring and detection of fraudulent activity on ecommerce websites. Along with Javascript and jQuery,
+                      I utilized Ruby on Rails for new configuration pages to alert the fraud team of threats.
+                    </div>
+                    <a href="https://www.radial.com/about/company" target="_blank" title="Booksmart Touring" className="link"><i className="fa fa-link" />Booksmart Touring</a>
+                  </div>
+                </div>
+                <div className="job" data-layout-gt-sm="row" data-layout-sm="column">
+                  <div className="general" data-flex="33" data-layout="column">
                     <span className="company">Booksmart Touring</span>
                     <span className="date">June 2015 - Present</span>
                   </div>
