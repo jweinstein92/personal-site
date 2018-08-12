@@ -108,7 +108,7 @@ class IndexPage extends React.Component {
                       monitoring and detection of fraudulent activity on ecommerce websites. Along with Javascript and jQuery,
                       I utilized Ruby on Rails for new configuration pages to alert the fraud team of threats.
                     </div>
-                    <a href="https://www.radial.com/about/company" target="_blank" title="Booksmart Touring" className="link"><i className="fa fa-link" />Booksmart Touring</a>
+                    <a href="https://www.radial.com/about/company" target="_blank" title="Radial" className="link"><i className="fa fa-link" />Radial</a>
                   </div>
                 </div>
                 <div className="job" data-layout-gt-sm="row" data-layout-sm="column">
