@@ -8,6 +8,7 @@ import './home.scss'
 import profilePhoto from '../img/profile.png'
 import beerPhoto from '../img/beer.jpg'
 import fftPhoto from '../img/fft.jpg'
+import zen from '../img/zen.png'
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -81,6 +82,8 @@ class IndexPage extends React.Component {
                   <span className="answer">Philadelphia, PA</span>
                   <span className="label">Profiles:</span>
                   <span className="answer"><a href="https://github.com/jweinstein92" target="_blank" title="Github"><i className="fa fa-github-square" /></a> <a href="https://www.linkedin.com/in/joshweinstein92/" target="_blank" title="LinkedIn"><i className="fa fa-linkedin-square" /></a></span>
+                  <span className="label">Resume:</span>
+                  <span className="answer resume"><a href="/Joshua%20Weinstein.pdf" target="_blank" title="Resume"><i className="fa fa-file-text" /></a></span>
                 </div>
               </div>
             </div>
@@ -222,6 +225,23 @@ class IndexPage extends React.Component {
                       be used to remove the opening theme song of a podcast for example.
                     </div>
                     <a href="https://github.com/jweinstein92/Audio-Removal-Using-FFT-" target="_blank" title="Audio Removal" className="link"><i className="fa fa-link" />Github</a>
+                  </div>
+                </div>
+              </div>
+              <div className="project" data-layout="column" data-layout-align="center center">
+                <div className="image-container">
+                  <Img src={zen} />
+                  <div className="overlay" data-layout="column" data-layout-align="start start">
+                    <span className="title">CSS Zen Garden</span>
+                    <div className="description" data-flex>
+                      A project that aims to demonstrate the power of CSS by providing a structured HTML file and showing
+                      the many different ways this HTML can be displayed. <br /> <br />
+                      Using a provided HTML file, I created a CSS file to create a unique experience for the content.
+                      Utilizing CSS animations and gradient backgrounds, I tried to create a feeling of calmness by
+                      taking elements of nature and the northern lights.
+                    </div>
+                    <a href="https://jweinstein92.github.io/css-zen-garden/" target="_blank" title="CSS Zen Garden" className="link"><i className="fa fa-link" />CSS Zen Garden</a>
+                    <a href="https://github.com/jweinstein92/css-zen-garden" target="_blank" title="CSS Zen Garden" className="link"><i className="fa fa-link" />Github</a>
                   </div>
                 </div>
               </div>
